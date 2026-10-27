@@ -30,6 +30,13 @@ With the phone face-down on your desk you can't see the screen, so the Glyph Mat
   - **Hold for 1.5 seconds** to mark everything as read.
 - 🌙 **Works as an Always-on (AOD) toy**, so pings show while the screen is off.
 
+## Screenshots
+<p align="center">
+  <img src="docs/screenshot-home.jpg" width="280" alt="Glyph Pings home screen: setup steps, live Glyph Matrix preview showing 'rahul', and Test ping / Replay / Clear buttons"/>
+  &nbsp;&nbsp;
+  <img src="docs/screenshot-settings.jpg" width="280" alt="Glyph Pings settings: names only, group chats, per-app toggles, scroll speed and brightness"/>
+</p>
+
 ## Install
 1. Download `GlyphPings-x.y.apk` from [Releases](../../releases/latest) and install it.
 2. Open the app → **Open settings** → allow **Glyph Pings** notification access.
