@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Glyph Pings</string>
+    <string name="toy_name">Pings</string>
+    <string name="toy_summary">Shows who messaged you on WhatsApp, Snapchat, Instagram and Teams. Long-press to replay.</string>
+    <string name="listener_name">Glyph Pings</string>
+</resources>

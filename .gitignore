@@ -1,0 +1,13 @@
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+captures/
+
+# Nothing Glyph SDK is closed-source: do not commit it, users download it themselves
+app/libs/*.aar
+# signing keys
+*.jks
+*.keystore
+keystore.properties
