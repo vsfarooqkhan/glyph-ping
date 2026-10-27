@@ -38,6 +38,14 @@ With the phone face-down on your desk you can't see the screen, so the Glyph Mat
 </p>
 
 ## Install
+### Option A: Obtainium (recommended, with automatic updates)
+[Obtainium](https://github.com/ImranR98/Obtainium) is a free app that installs and updates apps straight from their GitHub releases. Because it installs the way an app store does, it may avoid the Android blocks described [below](#cant-install-or-allow-notification-access).
+1. Install [Obtainium](https://github.com/ImranR98/Obtainium/releases/latest) on your phone.
+2. On your phone, tap **[Add Glyph Pings to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/vsfarooqkhan/glyph-ping)**, or add `https://github.com/vsfarooqkhan/glyph-ping` manually in Obtainium.
+3. Tap **Install**. Obtainium will let you know when a new version is released.
+4. Continue from step 2 below.
+
+### Option B: Download the APK
 1. Download `GlyphPings-x.y.apk` from [Releases](../../releases/latest) and install it.
 2. Open the app → **Open settings** → allow **Glyph Pings** notification access.
    > If Android blocks this, see [Can't install or allow notification access?](#cant-install-or-allow-notification-access) below.
