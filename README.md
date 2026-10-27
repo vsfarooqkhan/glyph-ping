@@ -40,11 +40,40 @@ With the phone face-down on your desk you can't see the screen, so the Glyph Mat
 ## Install
 1. Download `GlyphPings-x.y.apk` from [Releases](../../releases/latest) and install it.
 2. Open the app → **Open settings** → allow **Glyph Pings** notification access.
-   > If Android says **"Restricted setting"**, go to App info → ⋮ → **Allow restricted settings**, then try again. Android does this for every app installed from outside the Play Store.
+   > If Android blocks this, see [Can't install or allow notification access?](#cant-install-or-allow-notification-access) below.
 3. Tap **Open Glyph Toys**, turn on **Pings**, and also choose it as your **Always-on toy**.
 4. Tap **Test ping**. 🎉
 
 **Requires:** Nothing Phone (3), NothingOS build 20250801 or newer.
+
+### Can't install or allow notification access?
+Android has two protections that can get in the way of apps installed from a browser instead of an app store. Neither means something is wrong with the app: they're triggered because Glyph Pings needs **notification access** to work.
+
+**"App blocked to protect your device" (Google Play Protect)**
+
+In some regions, including India, Google blocks apps installed from the internet that ask for sensitive permissions like notification access. To get past it:
+1. Open the **Play Store** → tap your profile picture → **Play Protect** → ⚙ settings.
+2. Turn off **Scan apps with Play Protect**.
+3. Install the APK.
+4. **Turn the setting back on straight away.**
+
+**"App was denied access… restricted setting" (Restricted settings)**
+
+Android 13+ blocks notification access for apps installed from a file or browser until you unlock it for that app:
+1. Try to enable notification access once and let it fail. The unlock option only appears after a failed attempt.
+2. Open **Settings → Apps → See all apps → Glyph Pings**.
+3. Tap **⋮** (top right) → **Allow restricted settings**, and confirm with your PIN or fingerprint.
+4. Go back to **Settings → Notifications → Notification access** (or tap **Open settings** in the app), turn on **Glyph Pings** and tap **Allow**.
+
+> Don't see **Allow restricted settings**? Open the app at least once, force-stop it, try enabling notification access again, then go back to App info.
+
+**Or skip both: install over USB**
+
+Apps installed from a computer with `adb` aren't treated as downloaded from the internet, so neither block applies. With USB debugging on:
+```bash
+adb uninstall com.glyphpings   # only if you already installed it from the browser
+adb install GlyphPings-x.y.apk
+```
 
 ## Privacy
 Glyph Pings reads notifications, so you should know exactly what it does:
